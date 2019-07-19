@@ -1,5 +1,6 @@
 .classes {
   background-color: rgba(140, 198, 63, 0.1);
+  padding: 72px 12px 72px 12px;
 }
 
 .card-wrapper {
@@ -16,8 +17,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -27,6 +28,40 @@
   flex-flow: column nowrap;
   height: auto;
   background-color: white;
-  padding: 24px 0 24px 0;
+  padding: 24px;
   margin-bottom: 24px;
+  .title {
+    width: 100%;
+  }
+}
+
+// ////////////////////
+.hero {
+  padding: 72px 24px 72px 24px;
+  background-color: $--dark-body;
+  h1 {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.69;
+    letter-spacing: 0.75px;
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white;
+  }
+  h3 {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 2px;
+  }
+  h4 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.44;
+    letter-spacing: 0.75px;
+    color: white;
+    margin-bottom: 3rem;
+  }
 }

@@ -268,6 +268,9 @@ h6 {
   letter-spacing: 2px;
   color: #8cc63f; }
 
+.sub-title {
+  margin: 0 12px; }
+
 .title-curso {
   font-size: 32px;
   height: 43px;
@@ -488,9 +491,8 @@ a {
   width: 50%; }
 
 .btn-green-outline {
-  width: 240px;
-  height: 68px;
-  border-radius: 34px;
+  width: 100%;
+  border-radius: 50px;
   border: solid 2px #8cc63f;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -503,10 +505,9 @@ a {
   align-items: center; }
 
 .btn-p {
-  width: 172px;
   font-size: 24px;
   font-weight: 900;
-  margin: 0;
+  margin: 18px 30px;
   letter-spacing: 1px;
   text-align: center;
   color: #8cc63f; }
@@ -597,6 +598,9 @@ a {
 .bottom-24 {
   margin-bottom: 24px; }
 
+.hide {
+  display: none; }
+
 /*--------------------------------------------------------------
 # Media
 --------------------------------------------------------------*/
@@ -614,8 +618,14 @@ iframe,
 object {
   max-width: 100%; }
 
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+/* All Archives Page */
+/* Submit a Quote Page */
 .classes {
-  background-color: rgba(140, 198, 63, 0.1); }
+  background-color: rgba(140, 198, 63, 0.1);
+  padding: 72px 12px 72px 12px; }
 
 .card-wrapper {
   display: -webkit-box;
@@ -642,13 +652,32 @@ object {
   flex-flow: column nowrap;
   height: auto;
   background-color: white;
-  padding: 24px 0 24px 0;
+  padding: 24px;
   margin-bottom: 24px; }
+  .card .title {
+    width: 100%; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* All Archives Page */
-/* Submit a Quote Page */
-.margin-wrapper-mobile {
-  padding: 0 12px 0 12px; }
+.hero {
+  padding: 72px 24px 72px 24px;
+  background-color: #3b3939; }
+  .hero h1 {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.69;
+    letter-spacing: 0.75px; }
+  .hero h2 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: white; }
+  .hero h3 {
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 2px; }
+  .hero h4 {
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.44;
+    letter-spacing: 0.75px;
+    color: white;
+    margin-bottom: 3rem; }

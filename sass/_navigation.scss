@@ -126,9 +126,8 @@ a {
 
 .btn {
   &-green-outline {
-    width: 240px;
-    height: 68px;
-    border-radius: 34px;
+    width: 100%;
+    border-radius: 50px;
     border: solid 2px $--primary;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -141,10 +140,9 @@ a {
     align-items: center;
   }
   &-p {
-    width: 172px;
     font-size: 24px;
     font-weight: 900;
-    margin: 0;
+    margin: 18px 30px;
     letter-spacing: 1px;
     text-align: center;
     color: $--primary;
