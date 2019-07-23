@@ -20,7 +20,7 @@ get_header(); ?>
       </section>
 
       <section class="classes">
-        <div class=" bottom-24">
+        <div class="bottom-24">
           <h2 class="sub-title green-bold-title">Agenda de Cursos</h2>
         </div>
         <div class="card-wrapper">
@@ -66,6 +66,23 @@ get_header(); ?>
         <div class="btn-green-outline">
           <p class="btn-p">Formas de Pagamento</p>
         </div>
+      </section>
+
+      <section class="promo">
+        <div class="bottom-24 green">
+          <h3><?php the_field('promo_title',get_option('page_for_posts'))?></h3>
+        </div>
+        <div>
+          <h4><?php the_field('promo_body',get_option('page_for_posts'));?></h4>
+        </div>
+      </section>
+
+      <section class="photo-banner">
+          <div class="photo-banner-first">
+            <div>1</div>
+            <div>2</div>
+          </div>
+          <div class="photo-banner-second">3</div>
       </section>
 
 		</main><!-- #main -->
