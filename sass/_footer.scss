@@ -1,0 +1,56 @@
+.site-footer {
+  color: $--primary;
+  background: black;
+  padding: 1.5rem;
+  li {
+    list-style-type: none;
+  }
+  h5 {
+    color: #8cc63f;
+  }
+  &-copyright {
+    font-size: 0.875rem !important;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.58px;
+    text-align: center;
+  }
+}
+
+.footer {
+  padding: 1.5rem;
+  &-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  &-menu {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: 1fr;
+    padding: 58px 0;
+    &-child {
+      border-bottom: 1px solid white;
+      ul {
+        display: none;
+      }
+    }
+    &-heading {
+      font-size: 1.25rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
+    }
+  }
+}

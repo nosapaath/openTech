@@ -3,6 +3,7 @@
 --------------------------------------------------------------*/
 
 html {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 1rem;
 }
@@ -11,6 +12,7 @@ html {
 *:before,
 *:after {
   /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -35,23 +37,18 @@ hr {
   margin-bottom: $base__space-unit;
 }
 
-ul,
-ol {
-  margin: 0 0 $base__space-unit ($base__space-unit * 2);
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: disc;
 }
 
-ul {
-  list-style: disc;
+li {
+  list-style: none;
 }
 
 ol {
   list-style: decimal;
-}
-
-li > ul,
-li > ol {
-  margin-bottom: 0;
-  margin-left: $base__space-unit;
 }
 
 dt {

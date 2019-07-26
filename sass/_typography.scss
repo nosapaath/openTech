@@ -9,7 +9,7 @@ select,
 textarea {
   color: $color__text-main;
   font-family: $font__main;
-  font-size: 1.125rem;
+  font-size: 16px;
   line-height: $font__line-height-body;
 }
 
@@ -37,6 +37,9 @@ h6 {
   line-height: normal;
   letter-spacing: 2px;
   color: $--primary;
+  @include sm {
+    width: 100%;
+  }
 }
 
 .sub-title {
@@ -56,4 +59,8 @@ h6 {
 .margin-side-24 {
   margin-left: 24px;
   margin-right: 24px;
+}
+
+i {
+  color: #8cc63f;
 }

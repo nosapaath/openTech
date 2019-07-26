@@ -1,0 +1,132 @@
+.single-curso {
+  font-size: 1rem;
+  line-height: 1.625em;
+  p,
+  li {
+    font-size: 1.125em;
+  }
+  li {
+    list-style: disc;
+  }
+  h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 1px;
+  }
+  &-grid {
+    h1 {
+      line-height: normal;
+      font-size: 3em;
+    }
+    &-subtitle {
+      font-size: 1.5em;
+    }
+    &-section {
+      display: grid;
+      grid-gap: 1.5em;
+      margin-bottom: 3em;
+      li {
+        margin-left: 22px;
+      }
+    }
+  }
+  &-sidebar {
+    font-weight: 300;
+    line-height: 1.75em;
+    max-width: 45vw;
+    @include md {
+      position: absolute;
+      top: 260px;
+      right: 0;
+      -webkit-box-shadow: -10px 8px 26px -4px rgba(0, 0, 0, 0.16);
+      box-shadow: -10px 8px 26px -4px rgba(0, 0, 0, 0.16);
+    }
+    background-color: #fff;
+    max-width: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    // -webkit-box-align: center;
+    // -ms-flex-align: center;
+    // align-items: center;
+    padding: 40px 32px;
+    @include xl {
+      right: 300px;
+    }
+    h4 {
+      font-weight: bold;
+      font-size: 2em;
+      -ms-flex-item-align: center;
+      align-self: center;
+      @include sm {
+        -ms-flex-item-align: start;
+            align-self: flex-start;
+      }
+      color: $--primary;
+    }
+    h5 {
+      font-weight: 900;
+      font-size: 1em;
+    }
+    &-data {
+      font-size: 2em;
+    }
+    &-btn {
+      margin-top: 4.5em;
+    }
+  }
+}
+
+.single {
+  &--top {
+    background-color: rgba(140, 198, 63, 0.1);
+    padding: 40px 32px;
+    color: $--primary;
+    @include sm {
+      display: grid;
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+    @include lg {
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+    @include xl {
+      padding-right: 15vw;
+      padding-left: 15vw;
+    }
+  }
+  &--bottom {
+    h3,
+    h4 {
+      color: $--primary;
+    }
+    background-color: #3b3939;
+    color: white;
+    padding: 40px 32px;
+    @include sm {
+      display: grid;
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+    @include lg {
+      display: grid;
+      padding-right: 2rem;
+      padding-left: 2rem;
+    }
+    @include xl {
+      padding-right: 15vw;
+      padding-left: 15vw;
+    }
+  }
+}

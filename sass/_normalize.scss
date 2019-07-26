@@ -233,3 +233,9 @@ p {
   margin: 0;
   padding: 0;
 }
+
+.lg-50 {
+  @include md {
+    width: 50%;
+  }
+}

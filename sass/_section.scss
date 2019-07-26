@@ -4,6 +4,9 @@
   @include md {
     padding: 72px 40px 72px 40px;
   }
+  @include xl {
+    padding: 72px 15vw;
+  }
 }
 
 .card-wrapper {
@@ -45,18 +48,17 @@
     margin-bottom: 0px;
   }
   @include lg {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 70% 30%;
   }
   .title {
     width: 100%;
     @include lg {
-      width: auto;
+      display: grid;
+      grid-template-columns: 1fr 30%;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
     }
   }
 }
@@ -65,9 +67,6 @@
 .hero {
   padding: 72px 24px 72px 24px;
   background-color: $--dark-body;
-  @include md {
-    padding: 72px 40px 72px 40px;
-  }
   h1 {
     font-size: 32px;
     font-weight: 900;
@@ -93,11 +92,32 @@
     color: white;
     margin-bottom: 3rem;
   }
+  @include md {
+    padding: 72px 40px 72px 40px;
+  }
+  @include xl {
+    padding: 110px 15vw;
+    h1 {
+      font-size: 3.375rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
 }
 
+.promo-wrapper {
+  @include sm {
+    display: grid;
+    grid-template-columns: 1fr 33.33%;
+  }
+}
 .promo {
   padding: 72px 24px;
   background-color: rgba(140, 198, 63, 0.1);
+  @include xl {
+    padding: 110px 15vw;
+  }
   h3 {
     font-size: 40px;
     font-weight: 900;
@@ -118,18 +138,29 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  text-align: center;
-  min-height: 320px;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  img {
+    height: 30vw;
+    @include sm {
+      height: 23vw;
+    }
+    @include xl {
+      height: 15vw;
+    }
+  }
   &-first {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 160px;
-    -ms-flex-line-pack: center;
-    align-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    img {
+      width: 50%;
+      -o-object-fit: cover;
+      object-fit: cover;
+    }
   }
   &-second {
-    height: 160px;
+    -o-object-fit: cover;
+    object-fit: cover;
   }
 }
