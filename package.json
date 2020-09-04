@@ -8,7 +8,7 @@
     "cssnano": "^4.1.10",
     "eslint": "^6.0.1",
     "gulp-watch": "^5.0.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "pretty-error": "^2.1.1",
     "rename": "^1.0.4",
     "sass": "^1.22.6",
